@@ -1,0 +1,31 @@
+
+
+
+<div class="back">
+  <div class="wap">
+    <!-- <input #name (keyup.enter)="UserName(name)"> -->
+    <div class="bordurdesign">
+
+      <div class="buttonorganised" >
+
+        <button (click)="colordisplay('Rock')" [ngClass]="{'green' : RockPick, 'red': !RockPick}">
+          <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/114557-200.png" alt="Rock" >
+        </button>
+
+        <button (click)="colordisplay('Paper')" [ngClass]="{'green' : PaperPick, 'red': !PaperPick}">
+          <img  src="https://cdn3.iconfinder.com/data/icons/cleaning-solid-1/48/10-512.png" alt="Paper" >
+        </button>
+
+        <button (click)="colordisplay('Scissors')" [ngClass]="{'green' : ScissorsPick, 'red': !ScissorsPick}" >
+          <img src="https://maxcdn.icons8.com/Android_L/PNG/512/Healthcare/scissors-512.png" alt="Scissors" >
+        </button>
+
+        <div class="push">
+          <button class="ok" (click)="validationUser()"> Shoot </button>
+        </div>
+
+      </div>
+    </div>
+    <!-- <button (click)="leaderbord('act')">Leader Bord</button> -->
+  </div>
+</div>
