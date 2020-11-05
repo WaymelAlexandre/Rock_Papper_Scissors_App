@@ -3,7 +3,14 @@
 
 <div class="back">
   <div class="wap">
-    <!-- <input #name (keyup.enter)="UserName(name)"> -->
+
+    You name:{{this.displaymenu._username}}
+    <input #box (keyup.enter)="onEnter(box.value) ">
+    <h1>{{this.displaymenu._username}}</h1>
+
+
+
+
     <div class="bordurdesign">
 
       <div class="buttonorganised" >
@@ -25,6 +32,13 @@
         </div>
 
       </div>
+      <div>
+        <a routerLink="/leaderbord" rel="stylesheet">Leader-bord</a>
+      </div>
+      <div>
+        <a routerLink="/result" rel="stylesheet">last result</a>
+      </div>
+
     </div>
     <!-- <button (click)="leaderbord('act')">Leader Bord</button> -->
   </div>

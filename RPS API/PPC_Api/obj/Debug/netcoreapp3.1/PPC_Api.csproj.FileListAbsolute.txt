@@ -18,3 +18,23 @@ W:\school\414 lucky\freshstart\PierrePapierCiseaux\PPC_Api\obj\Debug\netcoreapp3
 W:\school\414 lucky\freshstart\PierrePapierCiseaux\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.dll
 W:\school\414 lucky\freshstart\PierrePapierCiseaux\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.pdb
 W:\school\414 lucky\freshstart\PierrePapierCiseaux\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.genruntimeconfig.cache
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\PPC_Api.exe
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\PPC_Api.deps.json
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\PPC_Api.runtimeconfig.json
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\PPC_Api.runtimeconfig.dev.json
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\PPC_Api.dll
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\bin\Debug\netcoreapp3.1\PPC_Api.pdb
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.csprojAssemblyReference.cache
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.AssemblyInfoInputs.cache
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.AssemblyInfo.cs
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.csproj.CoreCompileInputs.cache
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.RazorTargetAssemblyInfo.cache
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\staticwebassets\PPC_Api.StaticWebAssets.Manifest.cache
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\staticwebassets\PPC_Api.StaticWebAssets.xml
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.dll
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.pdb
+C:\Users\axlwa\Desktop\fresh start\RPS API\PPC_Api\obj\Debug\netcoreapp3.1\PPC_Api.genruntimeconfig.cache

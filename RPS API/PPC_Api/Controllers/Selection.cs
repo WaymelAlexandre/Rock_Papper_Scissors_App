@@ -10,17 +10,35 @@ namespace PPC_Api.Controllers
     
     public class SelectionController : ControllerBase
     {
+
+        public string[] listplayer ;
+
+
+
         [HttpPost("submit")]
         public GameResult SumitVote( [FromBody] PlayerRequestModel model){
             
-            return new GameResult(model.PlayerChoice);  
+            return new GameResult(model.PlayerChoice, model.UserName);  
         }
 
-        [HttpPost("Player")]
-        public LeaderBord sendleader( [FromBody] PlayerNameModel model){
 
-            return new LeaderBord(model.UserName);
-        }
+
+
+        // [HttpPost("leaderbordname")]
+
+        // public PlayerNameModel getname([FromBody] PlayerNameModel namemodel){
+        //     return new PlayerNameModel(namemodel.UserName);
+        // }
+
+        // [HttpGet("leaderbord")]
+        // public LeaderBord sendleader( [FromBody] LeaderBord model){
+
+           
+
+        //     return new LeaderBord(model.UserName, model.NumOfTurn, model.NumbreWin );
+        // }
+
+        // //(Number of Wins / Total Games Played) × 100
 
 
     }

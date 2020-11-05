@@ -14,18 +14,67 @@ export class DisplaymenuService {
   constructor(private client: HttpClient, private router: Router) { }
 
 
-  playerSelection ?: string
-  computerNum ?: string
-  result ?: string
+  _playerSelection ?: string;
+  _computerNum ?: string;
+  _result ?: string;
+  _username : string ;
+  _userCheck : boolean = false;
+  private localUrl = "https://localhost:5001/api/Selection/submit";
 
-  //sent 
+
+
+  //sent
   playerselect(pick : PlayerRequestModel){
-    this.client.post<GameResult>("https://localhost:5001/api/Selection/submit", pick)
-      .subscribe(Response => {
-        this.playerSelection = Response.playerChoice;
-        this.computerNum = Response.cpuChoice;
-        this.result = Response.result;
-        this.router.navigateByUrl("/display")
+    this.client.post<GameResult>(this.localUrl, pick)
+      .subscribe((Response) => {
+        if (this._userCheck == false ) {
+          alert("you need a nick name ")
+          return
+
+        }
+        this._username = Response.playerName
+        this._playerSelection = Response.playerChoice;
+        this._computerNum = Response.cpuChoice;
+        this._result = Response.result;
+        this.router.navigateByUrl("/result")
       })
     }
+
+    username(action: string ){
+      this._userCheck = true;
+      this._username = action;
+
+    }
+
+
+    // username(){
+    //   let request = this.client.get(this.localUrl);
+    //   request.subscribe((response) => {
+
+
+    //   })
+    // }
+
+
+    //}
+
+
+
+    // username(username: HTMLInputElement ){
+    //   let post = {title: username.value};
+
+    //   this.client.post<PlayerNameModel>(this.localUrl, JSON.stringify(post))
+    //   .subscribe((response) => {
+    //     post.id= response.json().id;
+    //     console.log(response.userName)
+    //    })
+
+    // }
+
+    // leaderbord(value: string)
+    // {
+    //   this.client.post(this.localUrl, value)
+    // }
+
+
 }

@@ -10,6 +10,7 @@ import { LeaderbordComponent } from './Component/leaderbord/leaderbord.component
 import { RoundpickComponent } from './Component/roundpick/roundpick.component';
 import { TitleComponent } from './Component/title/title.component';
 import { AppService } from './Service/app.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AppService } from './Service/app.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

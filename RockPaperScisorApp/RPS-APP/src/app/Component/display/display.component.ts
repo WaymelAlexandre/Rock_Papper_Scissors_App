@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppService } from '../../Service/app.service';
 import { DisplaymenuService } from '../../Service/displaymenu.service';
 import { TitleComponent } from '../title/title.component';
+
 
 @Component({
   selector: 'app-display',
@@ -11,7 +13,7 @@ import { TitleComponent } from '../title/title.component';
 })
 export class DisplayComponent implements OnInit {
 
-  constructor(private router: Router, private AppServices: AppService, private displaymenu : DisplaymenuService) { }
+  constructor(private router: Router, private AppServices: AppService, public displaymenu : DisplaymenuService) { }
 
   ngOnInit(): void {
   }
@@ -19,6 +21,8 @@ export class DisplayComponent implements OnInit {
   public RockPick: boolean = false ;
   public PaperPick: boolean = false ;
   public ScissorsPick: boolean = false ;
+  public checkifname: string ;
+
 
 
   colordisplay(option){
@@ -31,13 +35,21 @@ export class DisplayComponent implements OnInit {
   }
 
   validationUser(){
-
     if (this.RockPick)
       {this.displaymenu.playerselect({ playerChoice: "Rock" });}
     if (this.PaperPick)
       {this.displaymenu.playerselect({ playerChoice: "Paper" });}
     if (this.ScissorsPick)
-      {this.displaymenu.playerselect({ playerChoice: "Scissors" });    }
+      {this.displaymenu.playerselect({ playerChoice: "Scissors" });}
   }
+
+
+
+  onEnter(action: string ) {
+      this.displaymenu.username(action);
+  }
+
+
+
 
 }

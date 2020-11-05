@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "W:\\school\\414 lucky\\freshstart\\PierrePapierCiseaux\\PPC_Api\\PPC_Api.csproj": {}
+    "C:\\Users\\axlwa\\Desktop\\fresh start\\RPS API\\PPC_Api\\PPC_Api.csproj": {}
   },
   "projects": {
-    "W:\\school\\414 lucky\\freshstart\\PierrePapierCiseaux\\PPC_Api\\PPC_Api.csproj": {
+    "C:\\Users\\axlwa\\Desktop\\fresh start\\RPS API\\PPC_Api\\PPC_Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "W:\\school\\414 lucky\\freshstart\\PierrePapierCiseaux\\PPC_Api\\PPC_Api.csproj",
+        "projectUniqueName": "C:\\Users\\axlwa\\Desktop\\fresh start\\RPS API\\PPC_Api\\PPC_Api.csproj",
         "projectName": "PPC_Api",
-        "projectPath": "W:\\school\\414 lucky\\freshstart\\PierrePapierCiseaux\\PPC_Api\\PPC_Api.csproj",
+        "projectPath": "C:\\Users\\axlwa\\Desktop\\fresh start\\RPS API\\PPC_Api\\PPC_Api.csproj",
         "packagesPath": "C:\\Users\\axlwa\\.nuget\\packages\\",
-        "outputPath": "W:\\school\\414 lucky\\freshstart\\PierrePapierCiseaux\\PPC_Api\\obj\\",
+        "outputPath": "C:\\Users\\axlwa\\Desktop\\fresh start\\RPS API\\PPC_Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\axlwa\\AppData\\Roaming\\NuGet\\NuGet.Config",

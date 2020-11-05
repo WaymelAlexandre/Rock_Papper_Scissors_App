@@ -5,21 +5,22 @@ namespace PPC_Api.Modules
         
 
         public string UserName { get; set; }
-        // public int WinRatio { get; set; }
-        // public int NumOfturn { get; set; }
+        public int WinRatio { get; set; }
+        public int NumOfTurn { get; set; }
+        public int NumbreWin { get; set; }
 
-        public LeaderBord(){}
-        public LeaderBord(string userName) // int winRatio, int numOfturn
+        public LeaderBord(string userName, int numOfTurn, int numbreWin)
         {
-            UserName = userName;
-            // WinRatio = winRatio;
-            // NumOfturn = numOfturn;
+            this.UserName = userName;
+            this.NumOfTurn= numOfTurn;
+            this.NumbreWin = numbreWin;
+            
+  
         }
+        public LeaderBord(){}
 
 
-        // static public winrationresult(){
 
-        //     this.WinRatio =  win / this.numOfturn
-        // }
+        
     }
 }
