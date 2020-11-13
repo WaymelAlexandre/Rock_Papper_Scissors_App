@@ -1,0 +1,19 @@
+
+
+RpsApi-env.eba-kgtzy9pa.us-east-1.elasticbeanstalk.com
+
+
+
+1.0
+        Angular                                  API                                      Database 
+
+        Playerchoise        ----->>         Playerchoise
+        username                            CPUChoice
+                           <<-----          Result
+                                            username
+
+1.1
+
+        Playerchoise        ----->>         Playerchoise
+                                            CPUChoice
+                           <<-----          Result

@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-roundpick',
   templateUrl: './roundpick.component.html',
-  styles: [
+  styleUrls: ['./roundpick.component.css'
   ]
 })
 export class RoundpickComponent implements OnInit {

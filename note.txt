@@ -1,0 +1,38 @@
+
+--------------------------------------------------------------------------------------------------------------------------------ASAP-----------------------------------------------------------------------------------------------------------------------
+
+
+
+----API----
+    --- la logique du leaderbord ration et and win and lose 
+
+-----App----
+    finir le leaderbord i need to time myself for this 
+
+
+
+
+--------------------------------------------------------ok what need to be done-------------------------------------------------------------------------------------------------------ok what need to be done-----------------------------------------------
+----DataBase----
+    data dictionary
+    database to right 
+
+
+
+----API----
+    --- la logique du leaderbord 
+    --- la logique pour le nombre de round a joeur 
+
+
+
+----App----
+----ok what need to be done
+
+    --leaderbords
+        --design for the leader bord 
+    
+    --display
+        --fix the probleme with the imgage qui ne s'affiche pas
+
+    --impliment the nombre de round 
+        --ca devrait le faire et pas etre trop long 

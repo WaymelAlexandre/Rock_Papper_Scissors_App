@@ -4,7 +4,10 @@ import { Injectable } from '@angular/core';
 
 //modules
 import { GameResult } from "../modules/GameResult"
-import { PlayerRequestModel } from "../modules/PlayerRequestModel"
+import { InfoPlayer } from "../Modules/InfoPlayer"
+import { Observable } from 'rxjs';
+import { LeaderBord } from '../Modules/leaderBord';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Injectable({
   providedIn: 'root'
@@ -14,38 +17,41 @@ export class DisplaymenuService {
   constructor(private client: HttpClient, private router: Router) { }
 
 
-  _playerSelection ?: string;
-  _computerNum ?: string;
-  _result ?: string;
-  _username : string ;
-  _userCheck : boolean = false;
-  private localUrl = "https://localhost:5001/api/Selection/submit";
+  public _playerSelection ?: string;
+  public  _computerNum ?: string;
+  public  _result ?: string;
+  public _username : string ;
+  private _userCheck : boolean = false;
+  private localUrlSub = "https://localhost:5001/api/Selection/submit";
+  private localUrllead = "https://localhost:5001/api/Selection/leader";
 
 
 
   //sent
-  playerselect(pick : PlayerRequestModel){
-    this.client.post<GameResult>(this.localUrl, pick)
+  playerselect(pick : GameResult){
+    this.client.post<GameResult>(this.localUrlSub, pick)
+
+
       .subscribe((Response) => {
         if (this._userCheck == false ) {
           alert("you need a nick name ")
           return
-
         }
-        this._username = Response.playerName
+        this._username = Response.userName;
         this._playerSelection = Response.playerChoice;
         this._computerNum = Response.cpuChoice;
         this._result = Response.result;
         this.router.navigateByUrl("/result")
       })
     }
-
     username(action: string ){
       this._userCheck = true;
       this._username = action;
-
     }
 
+    getListPlayer(): Observable<LeaderBord[]>{
+      return this.client.get<LeaderBord[]>(this.localUrllead);
+    }
 
     // username(){
     //   let request = this.client.get(this.localUrl);

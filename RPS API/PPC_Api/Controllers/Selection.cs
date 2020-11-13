@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PPC_Api.Modules;
+using System.Collections.Generic;
+
 
 namespace PPC_Api.Controllers
 {
@@ -11,57 +13,33 @@ namespace PPC_Api.Controllers
     public class SelectionController : ControllerBase
     {
 
-        public string[] listplayer ;
+        
+        public static List<InfoPlayer> listofplayer = new List<InfoPlayer>();
 
 
 
+
+
+        
         [HttpPost("submit")]
-        public GameResult SumitVote( [FromBody] PlayerRequestModel model){
-            
-            return new GameResult(model.PlayerChoice, model.UserName);  
+        public GameResult SumitVote( [FromBody] GameResult model){
+
+
+            return new GameResult( model.PlayerChoice, model.UserName); 
         }
 
 
 
 
-        // [HttpPost("leaderbordname")]
+        [HttpGet("leader")]
+        public LeaderBorde Sumitleaderboder( [FromBody] InfoPlayer lead)
+        {
 
-        // public PlayerNameModel getname([FromBody] PlayerNameModel namemodel){
-        //     return new PlayerNameModel(namemodel.UserName);
-        // }
+            listofplayer.Add(new InfoPlayer(lead.UserName, lead.Numbrewin, lead.NumOfGame));
 
-        // [HttpGet("leaderbord")]
-        // public LeaderBord sendleader( [FromBody] LeaderBord model){
-
-           
-
-        //     return new LeaderBord(model.UserName, model.NumOfTurn, model.NumbreWin );
-        // }
-
-        // //(Number of Wins / Total Games Played) × 100
-
-
+            return new LeaderBorde(listofplayer);  
+            
+        }
     }
 }
 
-
-
-
-
-
-
-
-            
-            // sent in the play request
-            
-            // from that play request we can the player's choice (e.g. model.PlayerChoice)
-
-            // run the game logic
-
-            // generate computer choice
-
-            // make comparison between computer and player
-
-            // determine winner
-
-            // return result as a GameResult

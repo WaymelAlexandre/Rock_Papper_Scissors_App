@@ -1,5 +1,5 @@
 export interface GameResult {
-  playerName  : string;
+  userName  : string;
   playerChoice : string;
   cpuChoice : string;
   result : string;

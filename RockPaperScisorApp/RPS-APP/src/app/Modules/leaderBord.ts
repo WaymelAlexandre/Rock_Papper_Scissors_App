@@ -1,7 +1,7 @@
 
 export interface LeaderBord {
 
-  username : string;
+  userName  : string;
   winRatio : number;
   numOfturn : number;
 }
