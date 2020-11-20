@@ -1,7 +1,13 @@
 
-export interface LeaderBord {
+export interface leader {
+  leaderview: StatistiquePlayer[];
+}
 
-  userName  : string;
-  winRatio : number;
-  numOfturn : number;
+export interface StatistiquePlayer {
+
+  userName: string;
+  winRatio: number;
+  numbreTurnPlayed: number;
+  turnWin: Number;
+
 }

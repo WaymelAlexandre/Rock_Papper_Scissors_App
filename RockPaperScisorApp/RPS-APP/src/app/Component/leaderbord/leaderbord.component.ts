@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { InfoPlayer } from 'src/app/Modules/InfoPlayer';
+
 import { AppService } from 'src/app/Service/app.service';
 import { DisplaymenuService } from '../../Service/displaymenu.service';
 
@@ -18,9 +18,9 @@ export class LeaderbordComponent implements OnInit {
   public leaderbordshow;
 
 
-  showleader(){
-    this.displaymenu.getListPlayer().subscribe(data =>{
-      this.leaderbordshow = new this.leaderbordshow(data);
-    })
-  }
+  // showleader(){
+  //   this.displaymenu.getListPlayer().subscribe(data =>{
+  //     this.leaderbordshow = new this.leaderbordshow(data);
+  //   })
+  // }
 }

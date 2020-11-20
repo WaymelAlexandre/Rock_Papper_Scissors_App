@@ -4,14 +4,16 @@
 <div class="back">
   <div class="wap">
 
+
+    <input #box id="box" (keyup.enter)="onEnter(box.value)">
+
+
+
+
     You name:{{this.displaymenu._username}}
-    <input #box (keyup.enter)="onEnter(box.value) ">
-
-
-
-
 
     <div class="bordurdesign">
+
 
       <div class="buttonorganised" >
 
@@ -28,7 +30,7 @@
         </button>
 
         <div class="push">
-          <button class="ok" (click)="validationUser()"> Shoot </button>
+          <button class="ok" (click)="validationUser(box.value)"> Shoot </button>
         </div>
 
       </div>
