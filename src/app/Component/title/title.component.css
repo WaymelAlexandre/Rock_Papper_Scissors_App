@@ -1,0 +1,9 @@
+header{
+  margin-top: 5mm;
+  text-align: center;
+  width: 300px;
+  padding: 40px;
+  border: 5px double rgb(82, 76, 109) ;
+  background-color: rgb(202, 203, 206);
+  color: rgb(82, 76, 109);
+}

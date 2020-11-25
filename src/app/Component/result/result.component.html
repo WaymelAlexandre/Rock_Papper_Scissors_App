@@ -1,0 +1,53 @@
+
+
+<div class="mainbox">
+  <div class="bordurshow">
+    <div class="resulta">
+      <!-- The displayService need to be public for share the data in Html files  -->
+
+        <div class="stylebordurwin">
+          <H1>{{ this.displaymenu._result }}</H1>
+        </div>
+        <div class="icondisplay">
+
+          <div *ngIf="this.displaymenu._playerSelection == 'Paper'">
+            <img alt="Paper" srcset="https://cdn3.iconfinder.com/data/icons/island-2/50/108-512.png">
+          </div>
+          <div *ngIf="this.displaymenu._playerSelection == 'Rock'">
+            <img alt="Rock" srcset="https://d30y9cdsu7xlg0.cloudfront.net/png/114557-200.png">
+          </div>
+          <div *ngIf="this.displaymenu._playerSelection == 'Scissors'">
+            <img alt="Scissors" srcset="https://image.flaticon.com/icons/png/512/40/40794.png">
+          </div>
+
+          <div style="font-size: 66px;">   vs     </div>
+
+          <div  class="Machine">
+            <div *ngIf="this.displaymenu._computerNum == 'Paper'">
+              <img alt="Paper" srcset="https://cdn3.iconfinder.com/data/icons/island-2/50/108-512.png">
+            </div>
+            <div *ngIf="this.displaymenu._computerNum == 'Rock'">
+              <img alt="Rock" srcset="https://d30y9cdsu7xlg0.cloudfront.net/png/114557-200.png">
+            </div>
+            <div *ngIf="this.displaymenu._computerNum == 'Scissors'">
+              <img alt="Scissors" srcset="https://image.flaticon.com/icons/png/512/40/40794.png">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button (click)="backselect('backselect')"> try again </button>
+        </div>
+        <div>
+          <a routerLink="/leaderbord" rel="stylesheet">Leader-bord</a>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- link icon
+            <img alt="Rock" srcset="https://d30y9cdsu7xlg0.cloudfront.net/png/114557-200.png">
+            <img alt="Scissor" srcset="https://image.flaticon.com/icons/png/512/40/40794.png">
+            <img alt="Paper" srcset="https://cdn3.iconfinder.com/data/icons/island-2/50/108-512.png">
+-->
+
+

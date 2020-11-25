@@ -1,0 +1,17 @@
+
+*{
+  font-family: 'Tangerine', serif;
+  font-size: 26px;
+  text-shadow: 4px 4px 4px rgb(160, 157, 157);
+}
+
+
+.back{
+  display: flex;
+  position: relative;
+  background-color: rgb(224, 224, 228);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}

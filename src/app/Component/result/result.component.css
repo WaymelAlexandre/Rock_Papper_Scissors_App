@@ -1,0 +1,61 @@
+
+.mainbox{
+  display: flex;
+  position: relative;
+  background-color:  rgb(224, 224, 228);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.bordurshow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20cm;
+  height: 21cm;
+}
+
+.resulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.3cm double;
+  border-color: rgb(52, 52, 146) rgb(64, 55, 104) rgb(40, 36, 59) rgb(56, 47, 97);
+
+  width: 17cm;
+  height: 12cm;
+  background-color: rgb(202, 203, 206);
+}
+
+.icondisplay{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 17cm;
+}
+
+.stylebordurwin{
+  text-align: center;
+  background:linear-gradient( to top left,  rgb(202, 203, 206) ,  rgb(189, 188, 195)50% , rgb(202, 203, 206)90%);
+  padding: 1cm;
+}
+
+img{
+  border-radius: 4px;
+  padding: 5px;
+  width: 130px;
+}
+
+button{
+
+  border: rgb(82, 76, 109) solid 2px;
+  background:linear-gradient( to top left, rgb(132, 128, 146) 20%, rgb(202, 203, 206) 70%);
+  width: 6cm;
+  height: 2cm;
+  font-size: 45px;
+}

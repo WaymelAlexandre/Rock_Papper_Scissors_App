@@ -1,0 +1,48 @@
+
+<!-- <a routerLink=""></a>
+<a rel="stylesheet" routerLink="/display"></a> -->
+
+
+
+
+<div class="back">
+  <div class="wap">
+
+    {{this.displaymenu.name}}
+    <h1>{{this.displaymenu.name}}</h1>
+    <!-- ng loop  to display all the leader name win trun for eatch leaderview -->
+    <div class="bordurdesign" >
+
+
+
+      <table style="width:75%">
+        <tr id="tablehead">
+          <th> Name </th>
+          <th> Win Ratio </th>
+          <th> Trun Played </th>
+        </tr>
+        <tr id="statplayer" *ngFor="let item of displaymenu.leaderview">
+          <th>{{item.userName}}</th>
+          <th>{{item.winRatio}}</th>
+          <th>{{item.numbreTurnPlayed}}</th>
+          <!-- <th>{{item.turnWin}}</th>   //5 last win -->
+        </tr>
+      </table>
+
+
+
+
+
+
+
+
+
+      <div class="buttonorganised" >
+        <div>        <a routerLink="/display"> display</a>      </div>
+        <div>        <a routerLink="/result" rel="stylesheet">last result</a>     </div>
+      </div>
+    </div>
+    <!-- <button (click)="leaderbord('act')">Leader Bord</button> -->
+  </div>
+
+</div>
